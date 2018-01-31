@@ -6,4 +6,19 @@
 
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="menu">
+        <item>NIKE</item>
+        <item>NIKE</item>
+        <item>PUMA</item>
+        <item>VANS</item>
+    </string-array>
+
+    <string-array name="item">
+        <item>交友</item>
+        <item>大樹</item>
+        <item>鞋子</item>
+        <item>豬</item>
+    </string-array>
+    <string name="title_activity_friend">Friend</string>
 </resources>

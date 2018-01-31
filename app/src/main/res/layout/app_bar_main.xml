@@ -9,15 +9,16 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/nav_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:theme="?attr/actionBarTheme"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:theme="@style/AppTheme"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/text_color_primary" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -33,26 +34,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:minWidth="0dp"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/green"
+        app:tabSelectedTextColor="@color/green"
         tools:layout_editor_absoluteY="0dp">
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tabItem"
+            android:id="@+id/user_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@mipmap/ic_launcher"
-            android:text="1" />
+            android:icon="@drawable/user_home"
+            android:text="首頁" />
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tabItem2"
+            android:id="@+id/user_heart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2" />
+            android:icon="@drawable/user_heart"
+            android:text="收藏" />
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tabItem3"
+            android:id="@+id/user_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3" />
+            android:icon="@drawable/user_view"
+            android:text="查看物件" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/user_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/user_person"
+            android:text="個人資料" />
 
     </android.support.design.widget.TabLayout>
 

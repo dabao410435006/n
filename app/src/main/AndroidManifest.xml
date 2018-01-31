@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Friend"
+            android:label="@string/title_activity_friend"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".F"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
